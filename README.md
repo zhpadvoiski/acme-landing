@@ -1,1 +1,1 @@
-# Angancy 'Acme Web Solutions' landing page
+# Agency 'Acme Web Solutions' landing page
