@@ -1,0 +1,138 @@
+body{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 20px;
+    min-width: 400px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+.container{
+    padding: 0 20px;
+}
+p{
+    margin-bottom: 30px;
+}
+
+/* HEADER STYLES */
+header{
+    background: url("https://static.pexels.com/photos/248515/pexels-photo-248515.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+    color: rgb(223, 223, 223);
+    text-align: center;
+}
+.header-content{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.header-content h1{
+    margin-bottom: 30px;
+}
+.header-content a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px 40px;
+    color: white;
+    background-color: rgb(58, 58, 58);
+    border: 1px solid rgb(121, 121, 121);
+    outline: none;
+}
+.header-content a:hover{
+    background-color: rgb(223, 223, 223);
+    color: rgb(48, 48, 48);
+    cursor: pointer;
+}
+
+/* MAIN BLOCK STYLES */
+/* description block */
+main{
+    text-align: center;
+    color: rgb(58, 58, 58);
+    background-color: lightgray;
+    overflow: auto;
+}
+.description{
+    padding: 60px 0;
+}
+.description h2, .description h3{
+    margin-bottom: 40px;
+}
+/* features block */
+.features-block{
+    background: rgb(48, 48, 48);
+    padding: 2%;
+    overflow: auto;
+}
+.feature-card img{
+    width: 100%;
+    display: block;
+}
+.feature-card{
+    margin-top: 20px;
+    background-color: rgb(223, 223, 223);
+}
+.feature-card .description{
+    margin: 0 10px;
+}
+
+/* ABOUT BLOCK */
+.about-block{
+    color: rgb(223, 223, 223);
+}
+.about-block div{
+    padding: 50px 30px;
+}
+.contact{
+    background-color: rgb(66, 116, 255);
+}
+.contact a{
+    text-decoration: none;
+    color: inherit;
+}
+.about{
+    background-color: rgb(48, 48, 48);
+}
+
+/* FOOTER STYLES */
+footer{
+    padding: 40px 0;
+    background-color: rgb(22, 22, 22);
+    color: rgb(223, 223, 223);;
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+    color:rgb(66, 116, 255);
+}
+
+@media screen and (min-width: 768px){
+    .container{
+        max-width: 900px;
+        margin: auto;
+    }
+    .content-wrap{
+        columns: 2;
+        column-gap: 2em;
+    }
+    .features-block .container{
+        display: flex;
+        gap: 20px;
+    }
+    .feature-card{
+        flex: 1;
+        margin-top: 0;
+    }
+    .about-block, footer{
+        display: flex;
+    }
+    div, footer div{
+        flex: 1;
+    }
+}
